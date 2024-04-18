@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main   <!--  # Или замените на имя вашей основной ветки, если оно отличается -->
-
+      - main  
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,5 +15,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
           ACCESS_TOKEN: ${{ secrets.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 }}   <!-- # Замените на свой персональный токен доступа GitHub -->
-          BRANCH: main  <!--  # Замените на вашу ветку для развертывания GitHub Pages -->
-          FOLDER: . <!-- # Папка, в которой находятся файлы для развертывания (все файлы из репозитория) -->
+          BRANCH: main  
+          FOLDER: . 
